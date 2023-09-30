@@ -1,0 +1,95 @@
+// Sample JSON data for the cheat sheet with header, notes, and description
+const mynotes = [{
+        "header": "Header 1",
+        "notes": "Note 1",
+        "description": "1 2 3Description 3"
+    },
+    {
+        "header": "Header 2",
+        "notes": "Note 2",
+        "description": "1 2Description 1"
+    },
+    {
+        "header": "Header 3",
+        "notes": "Note 3",
+        "description": "1 2 3 4Description 2"
+    },
+    {
+        "header": "Header 1",
+        "notes": "Note 1",
+        "description": "Description 4"
+    },
+    {
+        "header": "Header 2",
+        "notes": "Note 2",
+        "description": "Description 5"
+    },
+    {
+        "header": "Header 3",
+        "notes": "Note 3",
+        "description": "Description 6"
+    }
+    // Add more data here...
+];
+
+// Function to split the search input into individual keywords
+function getKeywords() {
+    const input = document.getElementById("search").value;
+    return input.toLowerCase().split(",").map(keyword => keyword.trim());
+}
+
+// Function to check if a description contains all the keywords
+function descriptionContainsKeywords(description, keywords) {
+    return keywords.every(keyword => description.includes(keyword));
+}
+
+// Function to search the cheat sheet and display results as cards
+function searchCheatSheet() {
+    const keywords = getKeywords();
+    const resultsContainer = document.getElementById("resultsContainer");
+    resultsContainer.innerHTML = "";
+
+    // Sort the data by description
+    mynotes.sort((a, b) => a.description.localeCompare(b.description));
+
+    for (const item of mynotes) {
+        const header = item.header;
+        const notes = item.notes;
+        const description = item.description.toLowerCase();
+
+        if (descriptionContainsKeywords(description, keywords)) {
+            // Create a result card for each matching item
+            const resultCard = document.createElement("div");
+            resultCard.classList.add("result-card");
+
+            const headerElement = document.createElement("h2");
+            headerElement.innerText = header;
+
+            const notesElement = document.createElement("p");
+            notesElement.innerText = notes;
+
+            const desElement = document.createElement("h3");
+            desElement.innerText = description;
+
+            // Append elements to the result card
+            resultCard.appendChild(headerElement);
+            resultCard.appendChild(notesElement);
+            resultCard.appendChild(desElement);
+
+            // Append the result card to the results container
+            resultsContainer.appendChild(resultCard);
+        }
+    }
+
+    // Display a message if no results were found
+    if (resultsContainer.children.length === 0) {
+        resultsContainer.innerText = "No results found.";
+    }
+}
+
+// Initial population of the result cards
+searchCheatSheet();
+
+// Add an event listener to the search input for auto-search
+const searchInput = document.getElementById("search");
+searchInput.addEventListener("input", searchCheatSheet);

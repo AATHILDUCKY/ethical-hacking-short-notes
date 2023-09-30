@@ -1,0 +1,156 @@
+body {
+    font-family: system-ui;
+    background: #121212;
+    /* Dark background color */
+    color: #fff;
+    /* Light text color */
+}
+
+.top-header {
+    color: #fff;
+    text-align: center;
+    /* Light text color */
+}
+
+#search {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    background: #222;
+    /* Darker input background */
+    color: #fff;
+    /* Light text color */
+    border: 1px solid #444;
+    /* Darker input border */
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #f06d06;
+    /* Orange button background */
+    color: #fff;
+    /* Light text color */
+    border: none;
+    border-radius: 5px;
+}
+
+#resultsContainer {
+    margin-top: 30px;
+    margin-bottom: 200px;
+}
+
+.result-card {
+    border: 1px solid #444;
+    background-color: #333;
+    padding: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.result-card h2 {
+    margin: 0;
+    color: #f06d06;
+    text-align: center;
+    /* Orange heading color */
+}
+
+.result-card h3 {
+    margin: 0;
+    display: inline-block;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 3px;
+    /* Orange heading color */
+    text-align: left;
+    font-size: 13px;
+    background-color: #f06d06;
+}
+
+.result-card p {
+    margin: 0;
+    text-align: left;
+    color: #fff;
+    /* Light text color */
+}
+
+.footer {
+    position: fixed;
+    display: block;
+    margin: 0 auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    /* Change to your desired background color */
+    color: #fff;
+    /* Change to your desired text color */
+    padding: 3px;
+    text-align: center;
+}
+
+
+/* Style for the name */
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* Style for the about text */
+
+.about {
+    font-size: 16px;
+}
+
+.myname {
+    color: #f06d06;
+}
+
+
+/* Style for social icons */
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #fff;
+    /* Change to your desired icon color */
+    font-size: 20px;
+}
+
+
+/* Add hover effect to social icons if desired */
+
+.social-icons a:hover {
+    color: #00bcd4;
+    /* Change to your desired hover color */
+}
+
+
+/* Example styles for the result card */
+
+.result-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+}
+
+@media only screen and (min-width: 992px) {
+    .result-card {
+        width: 75%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
