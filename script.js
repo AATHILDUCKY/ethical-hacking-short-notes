@@ -1,9 +1,9 @@
 // Sample JSON data for the cheat sheet with header, notes, and description
 const mynotes = [
     {
-        "header": "Phishing Attacks",
-        "notes": "Phishing is a type of cyberattack where attackers impersonate trusted entities to trick victims into revealing sensitive information.",
-        "description": "Phishing, Social Engineering, Email Security"
+        "header": "telnet",
+        "notes": "how to connect : telnet <host_name> <port_num>",
+        "description": "telnet, remote"
     },
     {
         "header": "Firewalls",
