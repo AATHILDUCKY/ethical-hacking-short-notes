@@ -2,7 +2,7 @@
 const mynotes = [
     {
         "header": "telnet",
-        "notes": "how to connect : telnet <host_name> <port_num>",
+        "notes": "how to connect : telnet host_name port_num",
         "description": "telnet, remote"
     },
     {
