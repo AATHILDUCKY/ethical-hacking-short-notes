@@ -1,8 +1,8 @@
 // Sample JSON data for the cheat sheet with header, notes, and description
 const mynotes = [
     {
-        "header": "telnet",
-        "notes": "how to connect : telnet host_name port_num",
+        "header": "ftp Penetration Testing",
+        "notes": "<h3>Banner Grabbing</h3>",
         "description": "telnet, remote"
     },
     {
