@@ -1,15 +1,10 @@
 // Sample JSON data for the cheat sheet with header, notes, and description
 const mynotes = [
     {
-        "header": "ftp Penetration Testing",
-        "notes": "<h3>Banner Grabbing</h3>",
-        "description": "telnet, remote"
+        "header": "ftp Penetration Testing ",
+        "notes": "<h1>Banner Grabbing<h1>",
+        "description": "ftp, enum, pentest"
     },
-    {
-        "header": "Firewalls",
-        "notes": "Firewalls are network security devices that filter incoming and outgoing traffic to protect a network from unauthorized access and threats.",
-        "description": "Firewall, Network Security, Packet Filtering"
-    }
 ];
 
 
