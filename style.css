@@ -46,7 +46,12 @@ button {
 
 code{
     color:#f06d06;
+    font-size: 16px;
 }
+.result-card h4{
+    font-size: 17px;
+}
+
 .result-card {
     border: 1px solid #444;
     background-color: #333;
