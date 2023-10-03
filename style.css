@@ -44,6 +44,9 @@ button {
     margin-bottom: 200px;
 }
 
+code{
+    color:#f06d06;
+}
 .result-card {
     border: 1px solid #444;
     background-color: #333;
