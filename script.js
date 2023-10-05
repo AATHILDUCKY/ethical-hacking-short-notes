@@ -5,6 +5,21 @@ const mynotes = [
       "notes": "<h4>Banner Grabbing</h4><code>nmap -sV -A -p21 IP_ADD</code> -A  :- aggressive scan<br><code>nmap -sV -sC -p21 IP_ADD</code> :- default scripts <h4>Anonymous Login</h4><code>username:anonymous\n password:--- (empty or anonymous)</code><h4>Brute force</h4>1. automated - nmap scripts<br><code>locate /nmap/scripts | grep ftp-</code> <br> 2. manual - hydra <br> <code>hydra -l username -p password ftp://IPV4/..<br>hydra -L username.txt -P pass.txt ftp://IPV4/...</code> <h4>Browser connection</h4><code>ftp://anonymous:anonymous@IP</code><br> downloading file <br> <code> wget -m ftp://anonymous:anonymous@IP</code> <h4>Post Exploitation</h4> some dangerous settings <br> <code> anonymous_enable=YES <br> anon_upload_enable=YES <br> anon_mkdir_write_enable=YES <br>  anon_root=/home/username/ftp <br>chown_uploads=YES <br> chown_username=username <br> local_enable=YES<br> no_anon_password=YES <br> write_enable=YES </code> <br> .",
       "description": "ftp, enum , pentest"
     },
+    {
+        "header": "setup.py install",
+        "notes": "<code>python setup.py install<br> python3 setup.py install</code>",
+        "description": "setup.py, install"
+    },
+    {
+        "header": "install requirements.txt",
+        "notes": "<code>pip install -r requirements.txt<br>pip3 install -r requirements.txt</code><br>",
+        "description": "requirements.txt, install"
+    },
+    {
+        "header": "Convert md5 hashing",
+        "notes": "<h4>convert to md5</h4> <code>for word in $(cat wordlist.txt); do echo -n \"$word\" | md5sum | awk '{print $1}' >> md5.txt; done<code>",
+        "description": "md5, hashing, convert"
+    },
     // Add more data here...
   ];
   
