@@ -20,6 +20,11 @@ const mynotes = [
         "notes": "<h4>convert to md5</h4> <code>for word in $(cat wordlist.txt); do echo -n \"$word\" | md5sum | awk '{print $1}' >> md5.txt; done<code>",
         "description": "md5, hashing, convert"
     },
+    {
+        "header": "gobuster subdomain enum",
+        "notes": "<h4>bruteforce</h4><code>gobuster dns -d example.com -w word_list.txt</code><br><code>gobuster dns -d example.com -w word_list.txt-i</code> <br><br><p>i - ip address</p>",
+        "description": "gobuster, subdomain, enum"
+    },
     // Add more data here...
   ];
   
