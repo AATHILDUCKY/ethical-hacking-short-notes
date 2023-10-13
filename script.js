@@ -25,6 +25,11 @@ const mynotes = [
         "notes": "<h4>bruteforce</h4><code>gobuster dns -d example.com -w word_list.txt</code><br><code>gobuster dns -d example.com -w word_list.txt-i</code> <br><br><p>i - ip address</p>",
         "description": "gobuster, subdomain, enum"
     },
+    {
+        "header": "subdomain enum",
+        "notes": "<h4>gobuster</h4><code>gobuster dns -d example.com -w word_list.txt</code><br><h4>subbrute</h4><code>python3 subbrute.py -p <domain> -c 16</code> <br><br><p>-p : optional (DNS records)<br>-c : threads (max 16)</p><br> <h4>subfinder</h4><code>subfinder -d example.com</code><br><h4>assetfinder --subs-only example.com</h4>",
+        "description": "subdomain, enum"
+    },
     // Add more data here...
   ];
   
