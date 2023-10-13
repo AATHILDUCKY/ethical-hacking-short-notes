@@ -27,7 +27,7 @@ const mynotes = [
     },
     {
         "header": "subdomain enum",
-        "notes": "<h4>gobuster</h4><code>gobuster dns -d example.com -w word_list.txt</code><br><h4>subbrute</h4><code>python3 subbrute.py -p example.com -c 16</code><br><p>-p : optional (DNS records)<br>-c : threads (max 16)</p><br> <h4>subfinder</h4><code>subfinder -d example.com</code><br><h4>assetfinder</h4><code>assetfinder --subs-only example.com</code><br>",
+        "notes": "<h4>gobuster</h4><code>gobuster dns -d example.com -w word_list.txt</code><br><h4>subbrute</h4><code>python3 subbrute.py -p example.com -c 16</code><br><p>-p : optional (DNS records)<br>-c : threads (max 16)</p><br> <h4>subfinder</h4><code>subfinder -d example.com</code><br><h4>assetfinder</h4><code>assetfinder --subs-only example.com</code><br><br>",
         "description": "subdomain, enum"
     },
     // Add more data here...
