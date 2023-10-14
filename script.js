@@ -33,7 +33,7 @@ const mynotes = [
     {
         "header": "privilege escalation",
         "notes": "<h4>nmap privilege escalation</h4><code>nmap --interactive</code><br><code>nmap>!sh</code> <br><br>",
-        "description": "subdomain, enum"
+        "description": "nmap, privilege, escalation "
     },
     {
         "header": "privilege escalation find SUID files",
