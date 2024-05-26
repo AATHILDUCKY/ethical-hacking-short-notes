@@ -11,9 +11,9 @@ const mynotes = [
         "description": "setup.py, install"
     },
     {
-        "header": "Search flag in full directory",
+        "header": "Search flag in whole directory",
         "notes": "<code>grep -nr \"picoCTF\"</code>",
-        "description": "setup.py, install"
+        "description": "find, flag, grep, whole, directory, search flag, ctf"
     },
     {
         "header": "install requirements.txt",
