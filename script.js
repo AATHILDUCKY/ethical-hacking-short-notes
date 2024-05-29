@@ -11,6 +11,11 @@ const mynotes = [
         "description": "setup.py, install"
     },
     {
+        "header": "grep crt.sh search results",
+        "notes": "curl -s https://crt.sh/\?q\=%25.example.com\&output\=json | jq . | grep 'name_value' | awk '{print $2}' | sed -e 's/\"//g'| sed -e 's/,//g' |  awk '{gsub(/\\n/,\"\n\")}1' | sort -u </code>",
+        "description": "crt.sh, filter, subdomains, grep, curl"
+    },
+    {
         "header": "Search flag in whole directory",
         "notes": "<code>grep -nr \"picoCTF\"</code>",
         "description": "find, flag, grep, whole, directory, search flag, ctf"
