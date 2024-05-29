@@ -11,6 +11,11 @@ const mynotes = [
         "description": "setup.py, install"
     },
     {
+        "header": "private bug bounty program",
+        "notes": "<code>inurl:/bugbounty insite:lk</code>",
+        "description": "private, bugbounty, program"
+    },
+    {
         "header": "XSS vector payloads",
         "notes": "<code><a href='https://gist.github.com/kurobeats/9a613c9ab68914312cbb415134795b45'>XSS payload github link</a></code>",
         "description": "xss, payload, vector"
