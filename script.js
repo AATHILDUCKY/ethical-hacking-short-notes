@@ -11,6 +11,11 @@ const mynotes = [
         "description": "setup.py, install"
     },
     {
+        "header": "XSS vector payloads",
+        "notes": "<code><a href='https://gist.github.com/kurobeats/9a613c9ab68914312cbb415134795b45'>XSS payload github link</a></code>",
+        "description": "xss, payload, vector"
+    },
+    {
         "header": "grep crt.sh search results",
         "notes": "<a href='https://github.com/venom26/recon/blob/master/new%20crt.sh%20one%20liner'>link here</a> --> crt.sh web scraping using grep command.",
         "description": "crt.sh, filter, subdomains, grep, curl"
