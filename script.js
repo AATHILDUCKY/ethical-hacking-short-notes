@@ -16,6 +16,11 @@ const mynotes = [
         "description": "xss, payload, vector"
     },
     {
+        "header": "CTFs and labs",
+        "notes": "<h1><a href='https://hackthissite.org/'>HackThisSite</a></h1><br><h1><a href='https://app.hackinghub.io/'>Hackinghub</a></h1><br><h1><a href='https://www.hacksplaining.com/lessons'>Hackingplaning</a></h1><br><h1><a href='https://portswigger.net/web-security'>portswigger academy</a></h1><br><h1><a href='https://alf.nu/alert1/?world=alert&level=alert0'>Alert 1 to win - XSS</a></h1><br><h1><a href='https://prompt.ml/0'>Prompt.ml - XSS</a></h1><br><h1><a href='https://xss-game.appspot.com/'>XSS-game</a></h1><br><h1><a href='https://www.vulnhub.com/'>Vulnhub.com</a></h1><br><h1><a href='https://w3challs.com/'>W3challs.com</a></h1><br><h1><a href='https://picoctf.org/'>PicoCTF</a></h1><br><h1><a href='https://www.root-me.org/'>Root-me.org</a></h1><br><h1><a href='https://overthewire.org/wargames/natas/'>Overthewire</a></h1><br><h1><a href='https://xss.pwnfunction.com/'>XSS from pwnfunction</a></h1><br><h1><a href='https://github.com/tegal1337/0l4bs'>xss lab</a></h1><br>",
+        "description": "ctf, website, xss, labs, hacking, xss labs"
+    },
+    {
         "header": "grep crt.sh search results",
         "notes": "<a href='https://github.com/venom26/recon/blob/master/new%20crt.sh%20one%20liner'>link here</a> --> crt.sh web scraping using grep command.",
         "description": "crt.sh, filter, subdomains, grep, curl"
