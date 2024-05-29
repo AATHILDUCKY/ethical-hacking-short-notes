@@ -12,7 +12,7 @@ const mynotes = [
     },
     {
         "header": "grep crt.sh search results",
-        "notes": "curl -s https://crt.sh/\?q\=%25.example.com\&output\=json | jq . | grep 'name_value' | awk '{print $2}' | sed -e 's/\"//g'| sed -e 's/,//g' |  awk '{gsub(/\\n/,\"\n\")}1' | sort -u </code>",
+        "notes": "<a href='https://github.com/venom26/recon/blob/master/new%20crt.sh%20one%20liner'>link here</a> --> crt.sh web scraping using grep command.",
         "description": "crt.sh, filter, subdomains, grep, curl"
     },
     {
