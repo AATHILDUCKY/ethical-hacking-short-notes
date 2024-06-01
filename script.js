@@ -11,6 +11,11 @@ const mynotes = [
         "description": "setup.py, install"
     },
     {
+        "header": "sensitive information gathering in js files",
+        "notes": "<h2>find all JS files<h2><br><code>katana -u sub.domain.com</code><br><code>katana -b domain.com > website_all_js_files.txt</code><br><br><h2>find secret info</h2><code>cat website_all_js_files.txt | while read url; do python3 SecretFinder.py -i $url -o cli; done</code><br><br>find any paid api key - that is vulnerable<br><br>manualy test that api's then write a report",
+        "description": "leak, sensitive, information, disclosure, katana, secretfinder"
+    },
+    {
         "header": "private bug bounty program",
         "notes": "<code>inurl:/bugbounty insite:lk</code>",
         "description": "private, bugbounty, program"
